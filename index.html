@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Job Portal</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for jobs...">
+            <button onclick="searchJobs()">Search</button>
+        </div>
+    </header>
+    
+    <main>
+        <div id="job-listings">
+            <!-- Job listings will appear here -->
+        </div>
+        <main>
+            <div id="job-listings">
+                <!-- Job listings will appear here -->
+            </div>
+        
+            <div id="application-form" style="display: none;">
+                <h3>Apply for Job</h3>
+                <form id="apply-form">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+        
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+        
+                    <label for="resume">Upload Resume:</label><br>
+                    <input type="file" id="resume" name="resume" required><br><br>
+        
+                    <button type="submit">Submit Application</button>
+                </form>
+                <button onclick="closeApplicationForm()">Cancel</button>
+            </div>
+        </main>
+        
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
